@@ -162,8 +162,8 @@ header p{
     transform: translateX(-50%);
     margin-right: 0;
     margin-left: 0;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 #carouselMovie .carousel-indicators li{
     width: 10px;
@@ -187,6 +187,26 @@ header p{
     width: 100%;
     height: 100%;
     background:linear-gradient(to top,black,transparent);
+}
+#carouselMovie{
+    height: 650px;
+}
+#carouselMovie .carousel-inner{
+    height: 100%;
+}
+#carouselMovie .carousel-item{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#carouselMovie .carousel-item:first-child{
+    background-image: url(../img/hero-1.jpg);
+}
+#carouselMovie .carousel-item:nth-child(2){
+    background-image: url(../img/hero-2.jpg);
+}
+#carouselMovie .carousel-item:nth-child(3){
+    background-image: url(../img/hero-3.jpg);
 }
 /* NEWIN */
 .newIn__title{
@@ -486,5 +506,13 @@ footer a:hover{
     }
     #movieNavbar .navbar-nav .active .nav-link{
         color: #ec7532;
+    }
+    /* carousel  */
+    #carouselMovie .carousel-item .carousel-caption h2{
+        font-size:  2.1rem;
+    }
+    /* SHOWTIMES  */
+    .showTime .nav-tabs .nav-link{
+        font-size: 16px;
     }
 }
